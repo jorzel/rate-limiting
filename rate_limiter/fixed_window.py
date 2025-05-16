@@ -9,6 +9,7 @@ class FixedWindow:
     limiting the number of requests that can be made in a fixed time window.
     The window resets after the specified time period, allowing a new set
     of requests to be made.
+    This algorithms allows burst traffic at the edge of the window.
     """
     def __init__(self, limit, window_size_seconds):
         """
